@@ -10,8 +10,8 @@ export default function StickyNote({ id, text, onUpdate, onDelete }) {
     setEditing(true);
   }
   function handleSave() {
-    setEditing(false);
     onUpdate(id, newText);
+    setEditing(false);
   }
 
   return (

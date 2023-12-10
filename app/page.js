@@ -11,13 +11,13 @@ export default function Home() {
   function updateNote(id, newText) {
     setNotes((preNote) =>
       preNote.map((note) =>
-        note.id === id ? { ...notes, text: newText } : note
+        note.id === id ? { ...note, text: newText } : note
       )
     );
   }
-  function deleteNote(id) {
+  const deleteNote = (id) => {
     setNotes(notes.filter((note) => note.id !== id));
-  }
+  };
   console.log(notes);
   return (
     <main>
