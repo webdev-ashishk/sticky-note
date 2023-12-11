@@ -2,7 +2,7 @@
 import StickyNote from "@/components/stickyNote";
 import { useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
-
+     
 export default function Home() {
   const [notes, setNotes] = useState([]);
   function addNote() {
@@ -24,7 +24,7 @@ export default function Home() {
       {/* title  */}
       <div>
         <h1 className="text-5xl font-extrabold bg-gradient-to-br from-blue-800 to-red-200 bg-clip-text text-transparent">
-          QUICK-NOTEw
+          QUICK-NOTE
         </h1>
       </div>
       {/* button  */}
